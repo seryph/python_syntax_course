@@ -30,7 +30,7 @@ print(f[0])
 
 # Tuple
 g = ("red", "green", "blue")
-print([1])
+print(g[1])
 
 
 # Dictionary

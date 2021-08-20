@@ -28,13 +28,21 @@ print('\n')
 
 # Generators
 
-def firstn(n):
-    num = 0
-    while num < n:
-        yield num
-        num += 1
+def basic_gen():
+    n = 1
+    print(f'first num is {n}')
+    yield n
 
-print(firstn(10))
+    for i in range(4):
+      n += 1
+      i += 1
+      print(f'next num is {n}')
+      yield n
+
+
+
+for num in basic_gen():
+    print(num)
 
 
 print('\n')
@@ -42,5 +50,5 @@ print('\n')
 
 # List Comprehension
 
-operation = [1 + n for n in range(15)]
-print(operation)
+comprehension = [4 * n for n in range(3)]
+print(comprehension)
